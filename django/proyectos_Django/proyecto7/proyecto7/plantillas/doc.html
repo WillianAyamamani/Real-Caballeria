@@ -1,0 +1,12 @@
+<html>
+	<head></head>
+	<body>
+		{% include "superior/barra.html" %}
+		<h1>Diccionario</h1>
+		{% if nombre %}
+		<h3>MI nombre es {{Nombre}}</h3>
+		{% else %}
+		<h2>No encontramos la variable</h2>
+		{% endif %}
+	</body>
+</html>

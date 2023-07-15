@@ -1,0 +1,18 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>{{nombre.upper}} {{ap.upper}}</h1>
+		<p>El dato de hora y fecha es {{hora}}</p>
+		<strong>Lista de Cursos:</strong>
+		<ul>
+		{% if cursos %}
+			{% for valor in cursos %}
+				<li>{{valor}}</li>
+			{% endfor %}
+		{% else %}
+			<p> No hay Cursos.</p>
+		{% endif %}
+		<ul>
+	</body>
+</html>

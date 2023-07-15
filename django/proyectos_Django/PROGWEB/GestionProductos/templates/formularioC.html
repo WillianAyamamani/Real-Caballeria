@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h2>CONTACTO</h2>
+        {% if form.errors %}
+        <p style="color:red;">Revizar</p>
+        {% endif %}
+        <form action="/contacto/" method="POST"> {% csrf_token %}
+            <table>
+            {{ form.as_table }}
+            </table>
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>
